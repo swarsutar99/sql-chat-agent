@@ -1,4 +1,4 @@
-fastapi==0.104.1
+fastapi==0.99.0
 uvicorn[standard]==0.23.2
 vanna==0.7.3
 pymysql==1.1.0
