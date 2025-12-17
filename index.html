@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanna Agent Chat</title>
+<script type="module" src="https://img.vanna.ai/vanna-components.js"></script>
+<style>
+    vanna-chat { width: 100%; height: 600px; display: none; }
+    #loginForm { margin: 50px; }
+    #errorMsg { color: red; margin-top: 10px; }
+</style>
+</head>
+<body>
+<h1>Chat with Your Data</h1>
+
+<div id="loginForm">
+    <input type="text" id="email" placeholder="Email or Username" required /><br/><br/>
+    <input type="password" id="password" placeholder="Password" required /><br/><br/>
+    <button id="loginBtn">Login</button>
+    <div id="errorMsg"></div>
+</div>
+
+<vanna-chat
+    id="vannaChat"
+    api-base="http://localhost:8000"
+    sse-endpoint="http://localhost:8000/api/vanna/v2/chat_sse"
+    ws-endpoint="http://localhost:8000/api/vanna/v2/chat_websocket"
+    poll-endpoint="http://localhost:8000/api/vanna/v2/chat_poll">
+</vanna-chat>
+
+<script>
+const loginBtn = document.getElementById("loginBtn");
+const loginForm = document.getElementById("loginForm");
+const vannaChat = document.getElementById("vannaChat");
+const errorMsg = document.getElementById("errorMsg");
+
+loginBtn.addEventListener("click", async () => {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    errorMsg.textContent = "";
+
+    if (!email || !password) {
+        errorMsg.textContent = "Please enter email and password";
+        return;
+    }
+
+    try {
+        const res = await fetch("http://localhost:8000/api/login", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, password })
+        });
+
+        const data = await res.json();
+
+        if (res.status === 200 && data.status === "success") {
+            // Set headers for chat component
+            vannaChat.setAttribute("request-headers", JSON.stringify({
+                "X-User-Email": email,
+                "X-User-Password": password
+            }));
+
+            loginForm.style.display = "none";
+            vannaChat.style.display = "block";
+        } else {
+            errorMsg.textContent = "Invalid credentials";
+        }
+    } catch (err) {
+        console.error(err);
+        errorMsg.textContent = "Server error";
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+agent_name,agent_full_name,match_title,match_date,total_bets,total_stake,total_liability,total_winnings_paid,total_losses_collected,total_agent_debits,total_agent_credits,agent_net_profit_loss,avg_agent_share_percentage
+company,Company Agent,Punjab Kings vs Mumbai Indians,2025-07-30 14:44:00.000000,2,400000,74000,238000.0,200000,214200.0,66600,147600.0,100.0
+sa6,swar sutar,Punjab Kings vs Mumbai Indians,2025-07-30 14:44:00.000000,2,400000,74000,238000.0,200000,23800.0,7400,16400.0,20.0
+sc11,SC11 SC11,a vs b,2025-12-04 16:13:00.000000,6,12000,3000,12520.0,2000,12520.0,3000,9520.0,100.0
+company,Company Agent,pakistan vs austrelia,2025-01-07 20:37:00.000000,5,10000,10000,15860.0,0,14274.0,9000,5274.0,100.0
+company,Company Agent,csk vs mi,2025-01-02 16:54:00.000000,1,2000,2000,3900.0,0,3900.0,2000,1900.0,100.0
+company,Company Agent,maharashtra vs punjab,2025-01-07 19:31:00.000000,3,6000,4140,5940.0,2000,5346.0,3726,1620.0,100.0
+company,Company Agent,Royal Challengers Bengaluru vs Mumbai Indians,2025-09-17 17:20:00.000000,4,8000,8000,8960.0,0,8064.0,7200,864.0,100.0
+sa6,swar sutar,pakistan vs austrelia,2025-01-07 20:37:00.000000,5,10000,10000,15860.0,0,1586.0,1000,586.0,20.0
+company,Company Agent,sangli vs pune,2025-01-07 18:11:00.000000,4,8000,8000,8320.0,0,7904.0,7600,304.0,100.0
+company,Company Agent,Punjab Kings vs Delhi Capitals,2025-07-30 14:47:00.000000,1,2000,2000,2200.0,0,1980.0,1800,180.0,100.0
+sa6,swar sutar,maharashtra vs punjab,2025-01-07 19:31:00.000000,3,6000,4140,5940.0,2000,594.0,414,180.0,20.0
+company,Company Agent,Australia Women v England Women,2025-01-14 11:19:00.000000,2,4000,4000,4160.0,0,3744.0,3600,144.0,100.0
+company,Company Agent, Australia v India,2025-01-04 17:28:00.000000,2,4000,4000,4120.0,0,4120.0,4000,120.0,100.0
+company,Company Agent,Mumbai vs Kolhapur,2025-01-07 18:21:00.000000,2,4000,4000,4120.0,0,3708.0,3600,108.0,100.0
+sa6,swar sutar,Royal Challengers Bengaluru vs Mumbai Indians,2025-09-17 17:20:00.000000,4,8000,8000,8960.0,0,896.0,800,96.0,20.0
+company,Company Agent,Australia v India,2025-01-04 12:11:00.000000,2,4000,4000,4060.0,0,4060.0,4000,60.0,100.0
+sa6,swar sutar,Punjab Kings vs Delhi Capitals,2025-07-30 14:47:00.000000,1,2000,2000,2200.0,0,220.0,200,20.0,20.0
+sa6,swar sutar,Australia Women v England Women,2025-01-14 11:19:00.000000,2,4000,4000,4160.0,0,416.0,400,16.0,20.0
+sa6,swar sutar,sangli vs pune,2025-01-07 18:11:00.000000,2,4000,4000,4160.0,0,416.0,400,16.0,20.0
+sa6,swar sutar,Mumbai vs Kolhapur,2025-01-07 18:21:00.000000,2,4000,4000,4120.0,0,412.0,400,12.0,20.0
+sc11,SC11 SC11,Punjab Kings vs Team Bengaluru,2025-07-30 14:47:00.000000,2,4000,240,0.0,4000,0.0,240,-240.0,100.0
+sc11,SC11 SC11,Royal Challengers Bengaluru vs Mumbai Indians,2025-09-17 17:20:00.000000,4,8000,8000,6720.0,2000,6720.0,8000,-1280.0,100.0
+company,Company Agent,Ind vs Pak,2025-01-02 14:13:00.000000,3,6050,6050,4414.5,2000,4414.5,6050,-1635.5,100.0
+sa6,swar sutar,a vs b,2025-12-04 16:13:00.000000,1,200000,48000,0.0,200000,0.0,4800,-4800.0,20.0
+company,Company Agent,a vs b,2025-12-04 16:13:00.000000,1,200000,48000,0.0,200000,0.0,43200,-43200.0,100.0

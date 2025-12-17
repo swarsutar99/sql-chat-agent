@@ -1,0 +1,15 @@
+name
+albums
+sqlite_sequence
+artists
+customers
+employees
+genres
+invoices
+invoice_items
+media_types
+playlists
+playlist_track
+tracks
+sqlite_stat1
+agent_memory

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroic AI - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1><i class="fas fa-database"></i> Heroic AI Assistant</h1>
+                <p class="subtitle">Database Analytics Platform</p>
+            </div>
+
+            <div class="tabs">
+                <button class="tab-btn active" onclick="switchTab('admin')">
+                    <i class="fas fa-user-shield"></i> Admin
+                </button>
+                <button class="tab-btn" onclick="switchTab('user')">
+                    <i class="fas fa-user"></i> User
+                </button>
+            </div>
+
+            <div id="login-form">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i> 
+                        <span id="email-label">Admin Email</span>
+                    </label>
+                    <input type="text" id="email" placeholder="admin@definelabs.com">
+                    <div class="helper-text" id="email-helper">
+                        Use your existing admin email from MySQL admins table
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <div class="password-input">
+                        <input type="password" id="password" placeholder="Enter your password">
+                        <button type="button" class="toggle-password" onclick="togglePassword()">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                    <div class="helper-text">
+                        Use your existing MySQL database password
+                    </div>
+                </div>
+
+                <div class="demo-buttons">
+                    <button type="button" class="demo-btn" onclick="loadDemo('admin')">
+                        <i class="fas fa-user-tie"></i> Load Admin Demo
+                    </button>
+                    <button type="button" class="demo-btn" onclick="loadDemo('user')">
+                        <i class="fas fa-user"></i> Load User Demo
+                    </button>
+                </div>
+
+                <button class="login-btn" onclick="login()">
+                    <i class="fas fa-sign-in-alt"></i> 
+                    <span id="login-text">Login as Admin</span>
+                </button>
+
+                <div id="error-message" class="error-message hidden">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span id="error-text"></span>
+                </div>
+
+                <div class="login-footer">
+                    <p><i class="fas fa-info-circle"></i> 
+                        <strong>Note:</strong> This uses your existing MySQL authentication from the <code>admins</code> and <code>users</code> tables.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-info">
+            <h3><i class="fas fa-server"></i> Database Information</h3>
+            <ul>
+                <li><i class="fas fa-table"></i> <strong>Database:</strong> all_in_one</li>
+                <li><i class="fas fa-users"></i> <strong>Admin Table:</strong> admins (bcrypt hashed passwords)</li>
+                <li><i class="fas fa-user-friends"></i> <strong>User Table:</strong> users (bcrypt hashed passwords)</li>
+                <li><i class="fas fa-bolt"></i> <strong>Backend:</strong> FastAPI with JWT authentication</li>
+                <li><i class="fas fa-brain"></i> <strong>AI:</strong> Heroic AI with Anthropic Claude</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

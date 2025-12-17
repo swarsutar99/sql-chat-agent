@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroic AI - Chat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2><i class="fas fa-database"></i> Heroic AI</h2>
+                <div class="user-info" id="user-info">
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-details">
+                        <div class="user-name" id="user-name">Loading...</div>
+                        <div class="user-role" id="user-role"></div>
+                    </div>
+                    <button class="logout-btn" onclick="logout()" title="Logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="conversations">
+                <h3><i class="fas fa-history"></i> Conversations</h3>
+                <button class="new-chat-btn" onclick="newChat()">
+                    <i class="fas fa-plus"></i> New Chat
+                </button>
+                <div class="conversation-list" id="conversation-list">
+                    <!-- Conversations will be loaded here -->
+                </div>
+            </div>
+
+            <div class="quick-queries">
+                <h3><i class="fas fa-bolt"></i> Quick Queries</h3>
+                <button class="query-btn" onclick="setQuery(this)">
+                    <i class="fas fa-table"></i> Show all tables
+                </button>
+                <button class="query-btn" onclick="setQuery(this)">
+                    <i class="fas fa-chart-line"></i> Total profit this month
+                </button>
+                <button class="query-btn" onclick="setQuery(this)">
+                    <i class="fas fa-users"></i> User betting history
+                </button>
+                <button class="query-btn" onclick="setQuery(this)">
+                    <i class="fas fa-calendar"></i> Today's settled bets
+                </button>
+            </div>
+        </div>
+
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header">
+                <h2><i class="fas fa-comments"></i> Database Chat Assistant</h2>
+                <div class="chat-info">
+                    <span id="conversation-title">New Chat</span>
+                    <span class="message-count" id="message-count">0 messages</span>
+                </div>
+            </div>
+
+            <div class="chat-messages" id="chat-messages">
+                <!-- Welcome message -->
+                <div class="welcome-message">
+                    <div class="welcome-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Welcome to Heroic AI Assistant!</h3>
+                    <p>Ask questions about your database in natural language:</p>
+                    <div class="example-queries">
+                        <span class="example-tag" onclick="setExample(this)">"Show me all tables"</span>
+                        <span class="example-tag" onclick="setExample(this)">"What's the total profit this month?"</span>
+                        <span class="example-tag" onclick="setExample(this)">"List top 10 users by balance"</span>
+                        <span class="example-tag" onclick="setExample(this)">"Today's settled bets"</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="message-input" 
+                        placeholder="Ask about your database... (Press Enter to send, Shift+Enter for new line)"
+                        onkeydown="handleKeyPress(event)"
+                    >
+                    <button class="send-btn" onclick="sendMessage()" id="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <span class="connection-status" id="connection-status">
+                        <i class="fas fa-circle connected"></i> Connected
+                    </span>
+                    <span class="ai-info">
+                        <i class="fas fa-brain"></i> Powered by Heroic AI + Claude
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel (Results) -->
+        <div class="right-panel">
+            <div class="panel-header">
+                <h3><i class="fas fa-chart-bar"></i> Query Results</h3>
+                <div class="panel-tabs">
+                    <button class="panel-tab active" onclick="switchPanel('results')">
+                        <i class="fas fa-table"></i> Data
+                    </button>
+                    <button class="panel-tab" onclick="switchPanel('sql')">
+                        <i class="fas fa-code"></i> SQL
+                    </button>
+                    <button class="panel-tab" onclick="switchPanel('visualization')">
+                        <i class="fas fa-chart-pie"></i> Visualize
+                    </button>
+                </div>
+            </div>
+
+            <div class="panel-content">
+                <div id="results-panel" class="panel-section active">
+                    <div class="empty-state">
+                        <i class="fas fa-table"></i>
+                        <p>Query results will appear here</p>
+                    </div>
+                    <div id="results-content" class="hidden"></div>
+                </div>
+
+                <div id="sql-panel" class="panel-section">
+                    <div class="empty-state">
+                        <i class="fas fa-code"></i>
+                        <p>Generated SQL will appear here</p>
+                    </div>
+                    <pre id="sql-content" class="hidden"></pre>
+                </div>
+
+                <div id="visualization-panel" class="panel-section">
+                    <div class="empty-state">
+                        <i class="fas fa-chart-pie"></i>
+                        <p>Visualizations will appear here</p>
+                    </div>
+                    <div id="chart-container" class="hidden"></div>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                <button class="action-btn" onclick="copyResults()">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+                <button class="action-btn" onclick="downloadCSV()">
+                    <i class="fas fa-download"></i> CSV
+                </button>
+                <button class="action-btn" onclick="refreshData()">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <div class="spinner">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="loading-text">Processing your query...</div>
+            <div class="loading-details" id="loading-details">
+                <i class="fas fa-brain"></i> AI is thinking...
+            </div>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>

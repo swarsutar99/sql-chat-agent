@@ -1,0 +1,7 @@
+agent_id,agent_name,first_name,last_name,total_cricket_matches,total_bets,total_stake,total_liability,total_coins_credited,total_coin_debited,agent_coin_credited,net_profit_loss,avg_agent_share_percentage,profit_margin_percentage,settled_bets,pending_bets,current_ledger_balance
+1,company,Company,Agent,21,105,810403,221810,302574.5402668,275714.5,176538,99176.5,100.0,12.24,32,24,0.0
+6,sa6,swar,sutar,12,76,744353,168140,281920.0402668,28340.0,16814,11526.0,20.0,1.55,22,5,1006129.0
+11,sc11,SC11,SC11,3,12,24000,11240,19240.0,19240.0,11240,8000.0,100.0,33.33,12,0,5985.0
+2,stockist_agent,Stockist,Agent,4,18,44000,31620,0.0,0.0,4743,-4743.0,90.0,-10.78,0,18,-1581.0
+3,super_agent,Super,Agent,4,18,44000,31620,0.0,0.0,7905,-7905.0,75.0,-17.97,0,18,-3952.5
+4,agent,Agent,Agent,4,18,44000,31620,0.0,0.0,15810,-15810.0,50.0,-35.93,0,18,-7905.0

@@ -1,0 +1,51 @@
+agent_name,match_title,start_time,play_status,bets_count,total_stake,total_liability,coins_credited,agent_debited,agent_credited,agent_profit_loss,agent_share_percentage,roi_percentage,bet_status
+company,Punjab Kings vs Mumbai Indians,2025-07-30 14:44:00.000000,in_play,2,400000,74000,238000.0,214200.0,66600,147600.0,100,36.9,settled
+sa6,Punjab Kings vs Mumbai Indians,2025-07-30 14:44:00.000000,in_play,2,400000,74000,238000.0,23800.0,7400,16400.0,20,4.1,settled
+sc11,a vs b,2025-12-04 16:13:00.000000,in_play,6,12000,3000,12520.0,12520.0,3000,9520.0,100,79.33,settled
+company,pakistan vs austrelia,2025-01-07 20:37:00.000000,concluded,5,10000,10000,15860.0,14274.0,9000,5274.0,100,52.74,settled
+company,csk vs mi,2025-01-02 16:54:00.000000,concluded,1,2000,2000,3900.0,3900.0,2000,1900.0,100,95.0,settled
+company,maharashtra vs punjab,2025-01-07 19:31:00.000000,concluded,3,6000,4140,5940.0,5346.0,3726,1620.0,100,27.0,settled
+company,Royal Challengers Bengaluru vs Mumbai Indians,2025-09-17 17:20:00.000000,in_play,4,8000,8000,8960.0,8064.0,7200,864.0,100,10.8,settled
+sa6,pakistan vs austrelia,2025-01-07 20:37:00.000000,concluded,5,10000,10000,15860.0,1586.0,1000,586.0,20,5.86,settled
+company,sangli vs pune,2025-01-07 18:11:00.000000,concluded,4,8000,8000,8320.0,7904.0,7600,304.0,100,3.8,settled
+company,Punjab Kings vs Delhi Capitals,2025-07-30 14:47:00.000000,in_play,1,2000,2000,2200.0,1980.0,1800,180.0,100,9.0,settled
+sa6,maharashtra vs punjab,2025-01-07 19:31:00.000000,concluded,3,6000,4140,5940.0,594.0,414,180.0,20,3.0,settled
+company,Australia Women v England Women,2025-01-14 11:19:00.000000,concluded,2,4000,4000,4160.0,3744.0,3600,144.0,100,3.6,settled
+company, Australia v India,2025-01-04 17:28:00.000000,concluded,2,4000,4000,4120.0,4120.0,4000,120.0,100,3.0,settled
+company,Mumbai vs Kolhapur,2025-01-07 18:21:00.000000,concluded,2,4000,4000,4120.0,3708.0,3600,108.0,100,2.7,settled
+sa6,Royal Challengers Bengaluru vs Mumbai Indians,2025-09-17 17:20:00.000000,in_play,4,8000,8000,8960.0,896.0,800,96.0,20,1.2,settled
+company,Australia v India,2025-01-04 12:11:00.000000,concluded,2,4000,4000,4060.0,4060.0,4000,60.0,100,1.5,settled
+sa6,Punjab Kings vs Delhi Capitals,2025-07-30 14:47:00.000000,in_play,1,2000,2000,2200.0,220.0,200,20.0,20,1.0,settled
+sa6,Australia Women v England Women,2025-01-14 11:19:00.000000,concluded,2,4000,4000,4160.0,416.0,400,16.0,20,0.4,settled
+sa6,sangli vs pune,2025-01-07 18:11:00.000000,concluded,2,4000,4000,4160.0,416.0,400,16.0,20,0.4,settled
+sa6,Mumbai vs Kolhapur,2025-01-07 18:21:00.000000,concluded,2,4000,4000,4120.0,412.0,400,12.0,20,0.3,settled
+company,Delhi Capitals vs Punjab Kings,2025-07-30 14:41:00.000000,in_play,48,96352,0,-1479.9597331999998,0.0,0,0.0,100,0.0,completed
+company,Delhi Capitals vs Punjab Kings,2025-07-30 14:41:00.000000,in_play,1,1,0,0.0,0.0,0,0.0,100,0.0,rolled_back
+sa6,Delhi Capitals vs Punjab Kings,2025-07-30 14:41:00.000000,in_play,48,96352,0,-1479.9597331999998,0.0,0,0.0,20,0.0,completed
+sa6,Delhi Capitals vs Punjab Kings,2025-07-30 14:41:00.000000,in_play,1,1,0,0.0,0.0,0,0.0,20,0.0,rolled_back
+company,Mumbai Indians vs Chennai Super Kings,2025-07-17 10:59:00.000000,in_play,2,4000,640,0.0,0.0,64,-64.0,100,-1.6,pending
+stockist_agent,Mumbai Indians vs Chennai Super Kings,2025-07-17 10:59:00.000000,in_play,2,4000,640,0.0,0.0,96,-96.0,90,-2.4,pending
+super_agent,Mumbai Indians vs Chennai Super Kings,2025-07-17 10:59:00.000000,in_play,2,4000,640,0.0,0.0,160,-160.0,75,-4.0,pending
+sc11,Punjab Kings vs Team Bengaluru,2025-07-30 14:47:00.000000,in_play,2,4000,240,0.0,0.0,240,-240.0,100,-6.0,settled
+agent,Mumbai Indians vs Chennai Super Kings,2025-07-17 10:59:00.000000,in_play,2,4000,640,0.0,0.0,320,-320.0,50,-8.0,pending
+company,Chennai Super Kings vs Royal Challengers Bengaluru,2025-06-24 18:54:00.000000,in_play,2,4000,4000,0.0,0.0,400,-400.0,100,-10.0,pending
+sa6,Australia v India,2025-01-15 15:37:00.000000,concluded,2,4000,4000,0.0,0.0,400,-400.0,20,-10.0,pending
+company,Mumbai Indians vs Kolkata Knight Riders,2025-07-23 18:28:00.000000,in_play,5,10000,4300,0.0,0.0,430,-430.0,100,-4.3,pending
+sa6,Sydney Thunder v Perth Scorchers,2025-01-13 14:56:00.000000,concluded,3,6000,6000,0.0,0.0,600,-600.0,20,-10.0,pending
+stockist_agent,Chennai Super Kings vs Royal Challengers Bengaluru,2025-06-24 18:54:00.000000,in_play,2,4000,4000,0.0,0.0,600,-600.0,90,-15.0,pending
+stockist_agent,Mumbai Indians vs Kolkata Knight Riders,2025-07-23 18:28:00.000000,in_play,5,10000,4300,0.0,0.0,645,-645.0,90,-6.45,pending
+super_agent,Chennai Super Kings vs Royal Challengers Bengaluru,2025-06-24 18:54:00.000000,in_play,2,4000,4000,0.0,0.0,1000,-1000.0,75,-25.0,pending
+super_agent,Mumbai Indians vs Kolkata Knight Riders,2025-07-23 18:28:00.000000,in_play,5,10000,4300,0.0,0.0,1075,-1075.0,75,-10.75,pending
+sc11,Royal Challengers Bengaluru vs Mumbai Indians,2025-09-17 17:20:00.000000,in_play,4,8000,8000,6720.0,6720.0,8000,-1280.0,100,-16.0,settled
+company,Ind vs Pak,2025-01-02 14:13:00.000000,concluded,3,6050,6050,4414.5,4414.5,6050,-1635.5,100,-27.03,settled
+agent,Chennai Super Kings vs Royal Challengers Bengaluru,2025-06-24 18:54:00.000000,in_play,2,4000,4000,0.0,0.0,2000,-2000.0,50,-50.0,pending
+company,South Africa v Pakistan,2025-01-03 19:40:00.000000,concluded,1,2000,2000,0.0,0.0,2000,-2000.0,100,-100.0,pending
+agent,Mumbai Indians vs Kolkata Knight Riders,2025-07-23 18:28:00.000000,in_play,5,10000,4300,0.0,0.0,2150,-2150.0,50,-21.5,pending
+company,India vs England,2025-04-08 12:27:00.000000,in_play,9,26000,22680,0.0,0.0,2268,-2268.0,100,-8.72,pending
+stockist_agent,India vs England,2025-04-08 12:27:00.000000,in_play,9,26000,22680,0.0,0.0,3402,-3402.0,90,-13.08,pending
+company,Australia v India,2025-01-15 15:37:00.000000,concluded,2,4000,4000,0.0,0.0,3600,-3600.0,100,-90.0,pending
+sa6,a vs b,2025-12-04 16:13:00.000000,in_play,1,200000,48000,0.0,0.0,4800,-4800.0,20,-2.4,settled
+company,Sydney Thunder v Perth Scorchers,2025-01-13 14:56:00.000000,concluded,3,6000,6000,0.0,0.0,5400,-5400.0,100,-90.0,pending
+super_agent,India vs England,2025-04-08 12:27:00.000000,in_play,9,26000,22680,0.0,0.0,5670,-5670.0,75,-21.81,pending
+agent,India vs England,2025-04-08 12:27:00.000000,in_play,9,26000,22680,0.0,0.0,11340,-11340.0,50,-43.62,pending
+company,a vs b,2025-12-04 16:13:00.000000,in_play,1,200000,48000,0.0,0.0,43200,-43200.0,100,-21.6,settled

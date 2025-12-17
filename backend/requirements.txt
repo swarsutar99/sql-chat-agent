@@ -1,0 +1,12 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.6
+sqlalchemy==2.0.23
+pymysql==1.1.0
+bcrypt==4.1.2
+vanna>=0.4.0
+chromadb==0.4.22
+anthropic==0.8.0
+python-dotenv==1.0.0

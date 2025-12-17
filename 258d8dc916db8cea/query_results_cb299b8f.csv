@@ -1,0 +1,2 @@
+id,title,event_type,start_time,provider_id,provider_name,play_status,is_declared,created_at,updated_at,event_sub_type,won_by,sequence_string,tournament,stake_limits_package_id,is_archived,user_id,info,declaration_status,delay_bet_seconds,betfair_event_id,live_streaming_available,casino_table_id,end_time,declared_at,session_delay_bet_seconds,team1_image,team2_image,title_alias,created_by_id,updated_by_id
+1,c1 vs c2,cricket,2024-09-25 21:18:00.000000,1,arenas,concluded,t,2024-09-25 15:49:44.552862,2025-04-04 14:17:34.265826,Test,,,,,f,,,pending,2,1,t,,,,1,,,,,
